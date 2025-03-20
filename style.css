@@ -1,0 +1,167 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #1a1a1a;
+    color: #fff;
+    overflow-x: hidden;  /* No horizontal scroll */
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Section styles */
+.section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    opacity: 0;
+    transform: translateX(100vw);  /* Initially off-screen */
+}
+
+.section:nth-child(even) {
+    background: #333;
+    transform: translateX(-100vw);
+}
+
+.section h1 {
+    font-size: 4rem;
+    color: #f39c12;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #ccc;
+}
+
+/* Reveal animation */
+.section.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* 🎯 Landing Page */
+#landing-page {
+    height: 100vh;
+    background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; /* No scroll allowed */
+}
+
+.landing-content {
+    max-width: 600px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+button {
+    padding: 12px 30px;
+    background: #ff8800;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff4500;
+}
+
+/* 🎥 Main Website Hidden Initially */
+.hidden {
+    display: none;
+}
+
+/* Sections Styling */
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #000;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+#engineer { background: #1a1a1a; }
+#artist { background: #292929; }
+#poet { background: #333; }
+#real { background: #3c3c3c; }
+
+.section h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.5rem;
+    max-width: 800px;
+}
+
+/* Navigation Bar */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 20px;
+    background: #000;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ff8800;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
