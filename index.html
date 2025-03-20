@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedant Sharma</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+<!-- 🎯 Landing Page -->
+<div id="landing-page">
+    <div class="landing-content">
+        <img src="image.png" alt="Vedant Sharma" class="profile-pic">
+        <h1>Vedant Sharma</h1>
+        <button id="reveal-btn">Wanna Know Me? Click Here</button>
+    </div>
+</div>
+
+<!-- 🎥 Main Website (Initially Hidden) -->
+<div id="main-website" class="hidden">
+    <audio id="bg-music" src="Gold.mp3" loop></audio>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#engineer">Engineer Me</a></li>
+                <li><a href="#artist">Artist Me</a></li>
+                <li><a href="#poet">Poet Me</a></li>
+                <li><a href="#real">Real Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Horizontal Scroll Section -->
+    <div class="horizontal-scroll">
+        <section id="engineer" class="section">
+            <h2>Engineer Me</h2>
+            <p>Tech enthusiast and problem solver.</p>
+        </section>
+
+        <section id="artist" class="section">
+            <h2>Artist Me</h2>
+            <p>Soulful Singer and Passionate Theatre artist</p>
+        </section>
+
+        <section id="poet" class="section">
+            <h2>Poet Me</h2>
+            <p>Expressing emotions through words.</p>
+        </section>
+
+        <section id="real" class="section">
+            <h2>Real Me</h2>
+            <p>Just a curious soul wandering through life.</p>
+        </section>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
